@@ -1,0 +1,16 @@
+# Python 生成的缓存
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+.venv/
+venv/
+
+# 编辑器 / IDE 的私有配置
+.vscode/
+.idea/
+
+# 操作系统产生的垃圾文件
+Thumbs.db
+.DS_Store
+desktop.ini

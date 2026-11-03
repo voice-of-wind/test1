@@ -1,0 +1,14 @@
+# 统一换行符：仓库里、Windows 工作区里，都用 LF。
+#
+# 为什么必须带 eol=lf？
+#   只写 text=auto 的话，Windows 检出时会按 core.eol=native 转成 CRLF，
+#   于是每次 git add 都刷一屏 "LF will be replaced by CRLF" 的警告。
+#   加上 eol=lf 之后，检出也保持 LF，警告消失，跨平台行为完全一致。
+* text=auto eol=lf
+
+# 二进制文件必须显式声明：否则 git 会尝试做换行符转换，把文件弄坏
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.zip binary
